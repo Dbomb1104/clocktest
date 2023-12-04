@@ -55,6 +55,15 @@ public class UnitTest
         ClockTime clockTim2 = new ClockTime(11, 01, 01);
         assertEquals(clockTim1, clockTim1.equals(clockTim2));
     }
+
+    @Test
+    public void compare3()
+    {
+        ClockTime clockTim1 = new ClockTime(12, 01, 01);
+        ClockTime clockTim2 = new ClockTime(12, 12, 12);
+        assertEquals(clockTim1, clockTim1.equals(clockTim2));
+    }
 }
+
 
 
